@@ -6,7 +6,12 @@ for (index = 0; index < 4; index += 1) {
     divs.style.backgroundColor = arrayColor[index];
     paleta.appendChild(divs);
 }
-// let pixelBoard = document.getElementById('pixel-board');
-// for (index = 1; index < 26; index += 1) {
+let pixelBoard = document.getElementById('pixel-board');
+for (index = 1; index < 26; index += 1) {
+    let divBoard = document.createElement('div');
+    divBoard.className = 'pixel';
+    divBoard.style.backgroundColor = 'white';
+    pixelBoard.appendChild(divBoard);
+    
+}
 
-// }
