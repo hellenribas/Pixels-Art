@@ -18,3 +18,16 @@ let primeiraPaleta = paleta.children[0];
 console.log(primeiraPaleta);
 primeiraPaleta.classList.add('selected');
 
+let elemPaleta = document.getElementById('color-palette')
+
+elemPaleta.addEventListener('click', pegarCor)
+
+function pegarCor (event) {
+console.log('entrou na função');
+let elem = document.getElementsByClassName('selected')
+ elem[0].classList.remove('selected');
+ console.log('removeu');
+ elementTarget = event.target;
+ elementTarget.classList.add('selected');
+ 
+}
