@@ -14,4 +14,7 @@ for (index = 1; index < 26; index += 1) {
     pixelBoard.appendChild(divBoard);
     
 }
+let primeiraPaleta = paleta.children[0];
+console.log(primeiraPaleta);
+primeiraPaleta.classList.add('selected')
 
