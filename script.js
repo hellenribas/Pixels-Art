@@ -16,5 +16,5 @@ for (index = 1; index < 26; index += 1) {
 }
 let primeiraPaleta = paleta.children[0];
 console.log(primeiraPaleta);
-primeiraPaleta.classList.add('selected')
+primeiraPaleta.classList.add('selected');
 
