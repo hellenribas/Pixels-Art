@@ -20,7 +20,7 @@ primeiraPaleta.classList.add('selected');
 
 let elemPaleta = document.getElementById('color-palette')
 
-elemPaleta.addEventListener('click', pegarCor)
+elemPaleta.addEventListener('click', pegarCor);
 
 function pegarCor (event) {
 console.log('entrou na função');
@@ -30,4 +30,15 @@ let elem = document.getElementsByClassName('selected')
  elementTarget = event.target;
  elementTarget.classList.add('selected');
  
+}
+
+let elemPixel = document.getElementById('pixel-board');
+elemPixel.addEventListener('click',colocandoCor);
+
+function colocandoCor (event2) {
+    let selected = document.querySelector('.selected');
+    let cor = selected.style.backgroundColor;
+    elementTarget2 = event2.target;
+    elementTarget2.style.backgroundColor = cor;
+    
 }
