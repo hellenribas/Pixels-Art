@@ -1,10 +1,11 @@
 body {
     margin: 0;
-
 }
+
 #color-palette {
     width: 300px;
     height: 50px;
+    /* margin-left: 570px; */
 }
 .color {
     display: inline-block;
@@ -17,6 +18,7 @@ body {
     margin: 20px;
     height: 245px;
     padding-right: 0;
+    /* margin-left: 570px; */
 }
 .pixel {
     display: inline-block;
@@ -25,4 +27,8 @@ body {
 }
 .pixel {
     border: 1px solid black;
+}
+#botao {
+ margin-top: 20px;
+ /* text-align: center; */
 }
