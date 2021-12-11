@@ -19,7 +19,6 @@ body {
 #pixel-board {
     margin: 0 auto;
     display: inline-block;
-    border: red solid;
     width: 210px;
     height: 210px;
     padding-top: 4px;
