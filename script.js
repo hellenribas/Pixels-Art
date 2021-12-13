@@ -87,7 +87,6 @@ function criandoBotaoInput(botao2, input) {
     localBotao2.appendChild(botao2);
 }
 criandoBotaoInput()
-
 let pegandobotao2 = document.getElementById('generate-board');
 pegandobotao2.addEventListener('click', aumentandoPixel)
 
