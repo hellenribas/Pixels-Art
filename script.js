@@ -78,6 +78,7 @@ function criandoBotaoInput(botao2, input) {
     input.type = 'number';
     input.min = '1'
     input.id = 'board-size';
+    input.placeholder = ' Tamanho do Quadro'
 
     localBotao2.appendChild(input)
     botao2 = document.createElement('button');
