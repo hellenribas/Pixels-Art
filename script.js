@@ -1,4 +1,9 @@
-let paleta = document.getElementById('color-palette');
+const paleta = document.getElementById('color-palette');
+const pixelBoard = document.getElementById('pixel-board');
+const elem = document.getElementsByClassName('selected');
+const localBotao = document.getElementById('botao');
+const pixelBoard2 = document.getElementsByClassName('pixel');
+const localBotao2 = document.getElementById('botao2')
 //questão 12 usei como referência o site https://wallacemaxters.com.br/blog/2021/02/20/como-gerar-cores-aleatorias-no-javascript. 
 function gerarCorAleatoria() {
     let divs = document.createElement('div');
@@ -17,32 +22,23 @@ function gerarCorAleatoria() {
     }
 }
 gerarCorAleatoria();
-let pixelBoard = document.getElementById('pixel-board');
 for (index = 1; index < 26; index += 1) {
     let divBoard = document.createElement('div');
     divBoard.className = 'pixel';
     divBoard.style.backgroundColor = 'white';
     pixelBoard.appendChild(divBoard);
-
 }
 let primeiraPaleta = paleta.children[0];
-console.log(primeiraPaleta);
 primeiraPaleta.classList.add('selected');
-
-let elemPaleta = document.getElementById('color-palette')
-
-elemPaleta.addEventListener('click', pegarCor);
+paleta.addEventListener('click', pegarCor);
 
 function pegarCor(event) {
-    let elem = document.getElementsByClassName('selected')
     elem[0].classList.remove('selected');
     elementTarget = event.target;
     elementTarget.classList.add('selected');
 
 }
-
-let elemPixel = document.getElementById('pixel-board');
-elemPixel.addEventListener('click', colocandoCor);
+pixelBoard.addEventListener('click', colocandoCor);
 
 function colocandoCor(event2) {
     if (event2.target.id !== 'pixel-board') {
@@ -51,7 +47,6 @@ function colocandoCor(event2) {
     event2.target.style.backgroundColor = cor;
 }
 }
-let localBotao = document.getElementById('botao');
 function criarBotao(botao) {
     botao = document.createElement('button');
     let text = document.createTextNode('Limpar');
@@ -60,25 +55,21 @@ function criarBotao(botao) {
     localBotao.appendChild(botao);
 }
 criarBotao();
-let botaoLimpar = document.getElementById('clear-board')
+const botaoLimpar = document.getElementById('clear-board');
 botaoLimpar.addEventListener('click', tirandoCor)
 
 function tirandoCor() {
-    let pixelBoard2 = document.getElementsByClassName('pixel');
-    console.log(pixelBoard2);
     for (index = 0; index < pixelBoard2.length; index += 1) {
         pixelBoard2[index].style.backgroundColor = 'white';
     }
 }
-let localBotao2 = document.getElementById('botao2')
 function criandoBotaoInput(botao2, input) {
     input = document.createElement('input');
     input.type = 'number';
-    input.min = '1'
+    input.min = '1';
     input.id = 'board-size';
-    input.placeholder = ' Tamanho do Quadro'
-
-    localBotao2.appendChild(input)
+    input.placeholder = ' Tamanho do Quadro';
+    localBotao2.appendChild(input);
     botao2 = document.createElement('button');
     let text2 = document.createTextNode('VQV');
     botao2.appendChild(text2);
@@ -86,11 +77,11 @@ function criandoBotaoInput(botao2, input) {
     localBotao2.appendChild(botao2);
 }
 criandoBotaoInput()
-let pegandobotao2 = document.getElementById('generate-board');
+const pegandobotao2 = document.getElementById('generate-board');
 pegandobotao2.addEventListener('click', aumentandoPixel)
 
-let pegaInput = document.getElementById('board-size');
-let quadro = document.getElementById('pixel-board');
+const pegaInput = document.getElementById('board-size');
+const quadro = document.getElementById('pixel-board');
 //Me inspirei na refatoração através da ajuda do Emerson Alves.
 function criarNovoQuadro(quant) {
     N = (quant * 42);
@@ -105,8 +96,7 @@ function criarNovoQuadro(quant) {
     }
 }
 function aumentandoPixel() {
-    let quadroTamanho = quadro.children.length
-    console.log(quadroTamanho);
+    let quadroTamanho = quadro.children.length;
     for (i = 0; i < quadroTamanho; i += 1) {
         quadro.removeChild(quadro.lastElementChild);
     }
