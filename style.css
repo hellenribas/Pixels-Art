@@ -1,115 +1,124 @@
-
 body {
- margin: 0;
- /*image1.png (doce PNG) foi desenvolvido por Sweet Dream e vem de <a href="https://pt.pngtree.com"> Pngtree.com</a>*/
- background-image: url(image1.png);
- background-position: center top;
- background-size: 1700px 900px;
-font-family: 'Abril Fatface', cursive;
-font-family: 'Inconsolata', monospace;
-font-family: 'Playfair Display', serif;
-font-family: 'Press Start 2P', cursive;
-font-family: 'Trirong', serif;
-background-color: #65B891;
-background-repeat: no-repeat;
+  margin: 0;
+
+  /* image1.png (doce PNG) foi desenvolvido por Sweet Dream e vem de <a href="https://pt.pngtree.com"> Pngtree.com</a>*/
+  background-image: url('image1.png');
+  background-position: center top;
+  background-size: 1700px 900px;
+  font-family: ' Abril Fatface ',
+    ' Inconsolata ', monospace,
+    ' Playfair Display ', serif,
+    ' Press Start 2P ', ' cursive ',
+    ' Trirong ';
+  background-color: #65b891;
+  background-repeat: no-repeat;
 }
+
 header {
-    box-shadow: 5px 5px 10px 4px white;
-    background-color: #4E878C;
-    backdrop-filter: blur(6px);
-    -webkit-backdrop-filter: blur(6px);
-    box-shadow: 5px 5px 5px 0.1;
-    padding-top: 5px;
-    
+  box-shadow: 5px 5px 10px 4px white;
+  background-color: #4e878c;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 5px 5px 5px 0.1;
+  padding-top: 5px;
 }
+
 h1 {
-    text-align: center;
-    margin-bottom: 50px;
-    margin-top: 20px;
-    color: #EE00CE;
-    font-size: 40px ;
-    font-family: 'Press Start 2P', serif;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  color: #ee00ce;
+  font-size: 40px;
+  font-family: 'Press Start 2P', serif;
 }
 
 #color-palette {
-    margin: 0 auto;
-    margin-left: 45%;
-    width: 300px;
-    height: 50px;
-    /* margin-left: 570px; */
+  margin: 0 auto;
+  margin-left: 45%;
+  width: 300px;
+  height: 50px;
+
+  /* margin-left: 570px; */
 }
+
 .color {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    border: 1px solid rgb(0, 0, 0);
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
 }
+
 #pixel-board {
-    margin-top: 40px;
-    display: block;
-    width: 210px;
-    height: 210px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 70px;
-    padding-top: 4px;
-    padding: 100px;
-    border-radius: 20px;
-    box-shadow: 5px 5px 10px 4px rgb(60, 255, 141); 
+  margin-top: 40px;
+  display: block;
+  width: 210px;
+  height: 210px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70px;
+  padding-top: 4px;
+  padding: 100px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 4px rgb(60, 255, 141);
 }
+
 .pixel {
-    margin-top: -4px;
-    display: inline-block;
-    width: 40px;
-    height: 40px;
+  margin-top: -4px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
 }
-.pixel {
-    border: 1px solid black;
-}
+
+
 #botao {
-display: block;
- margin-top: 20px;
- /* text-align: center; */
+  display: block;
+  margin-top: 20px;
+
 }
-#board-size{
-    display: inline-block;
-    margin-left: 710px;
-    box-shadow: 0px 0px 0px 4px rgb(221, 199, 5);
-}
-#clear-board {
-    display: block;
-    margin-left: 820px;
-    margin-bottom: 20px;
-    width: 80px;
-    font-family:'Playfair Display', serif;
-    font-weight: 700;
-    border-radius: 20px;
-    background-color: #005f73;
-    color: #ffe81c;
-    font-size: 15px;
-}
-#generate-board {
-    display: inline-block;
-    margin-left: 20px;
-    margin-top: 20px;
-    width: 85px;
-    font-weight: 700;
-    color: #ffe81c;
-    font-size: 20px;
-    font-family:'Playfair Display', serif;
-    border-radius: 20px;
-    background-color: #005f73;
-    
-}
+
 #board-size {
-    width: 200px;
-    border-radius: 20px;
+  display: inline-block;
+  margin-left: 710px;
+  box-shadow: 0px 0px 0px 4px rgb(221, 199, 5);
+  width: 200px;
+  border-radius: 20px;
 }
+
+#clear-board {
+  display: block;
+  margin-left: 820px;
+  margin-bottom: 20px;
+  width: 80px;
+  font-family: ' Playfair Display ', serif;
+  font-weight: 700;
+  border-radius: 20px;
+  background-color: #005f73;
+  color: #ffe81c;
+  font-size: 15px;
+}
+
+#generate-board {
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 85px;
+  font-weight: 700;
+  color: #ffe81c;
+  font-size: 20px;
+  font-family: ' Playfair Display ', serif;
+  border-radius: 20px;
+  background-color: #005f73;
+
+}
+
+
 #clear-board:hover {
-    background-color: aquamarine;
-    color: #ff00f2;
+  background-color: aquamarine;
+  color: #ff00f2;
 }
+
 #generate-board:hover {
-    background-color: aquamarine;
-    color: #ff00f2;
+  background-color: aquamarine;
+  color: #ff00f2;
 }
