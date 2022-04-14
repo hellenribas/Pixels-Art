@@ -1,6 +1,9 @@
 PROJETO PIXELS ART
 ---
+
 ## Habilidades
+
+Um dos primeiros projetos feitos utilizando JavaScript, CSS e HTML
 
 - Manipular o DOM
 
